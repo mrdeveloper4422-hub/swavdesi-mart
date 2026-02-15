@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swavdesi Mart</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Swavdesi Mart</h1>
+      <p class="tagline">Fresh local goods delivered fast.</p>
+    </header>
+
+    <main>
+      <section class="catalog" aria-label="Product catalog">
+        <h2>Popular Picks</h2>
+        <div id="product-grid" class="grid"></div>
+      </section>
+
+      <section id="admin-panel" class="admin-panel hidden" aria-hidden="true">
+        <div class="admin-header">
+          <h2>Admin Panel</h2>
+          <button id="close-admin" type="button" aria-label="Close admin panel">✕</button>
+        </div>
+        <p class="admin-note">
+          Private controls (available only after pressing <kbd>Ctrl</kbd> + <kbd>1</kbd> and authenticating).
+        </p>
+
+        <form id="product-form" class="admin-form">
+          <label>
+            Product name
+            <input id="product-name" type="text" required />
+          </label>
+          <label>
+            Price (₹)
+            <input id="product-price" type="number" min="1" required />
+          </label>
+          <button type="submit">Add product</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <small>Tip: Admin access shortcut is <kbd>Ctrl</kbd> + <kbd>1</kbd>.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
