@@ -1,0 +1,138 @@
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --danger: #dc2626;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.topbar {
+  text-align: center;
+  background: linear-gradient(120deg, #eff6ff, #dbeafe);
+  padding: 2rem 1rem 1.5rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.tagline {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+main {
+  width: min(1000px, 92vw);
+  margin: 1.5rem auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.catalog,
+.admin-panel {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+
+.product {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.9rem;
+  background: #f9fafb;
+}
+
+.product strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.admin-panel {
+  border: 2px solid #bfdbfe;
+}
+
+.hidden {
+  display: none;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#close-admin {
+  border: none;
+  background: transparent;
+  color: var(--danger);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.admin-note {
+  margin-top: 0.25rem;
+  color: var(--muted);
+}
+
+.admin-form {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  align-items: end;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+
+input,
+button {
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
+
+button {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  width: min(1000px, 92vw);
+  margin: 0 auto 1.6rem;
+  color: var(--muted);
+}
+
+kbd {
+  font-family: monospace;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+}
